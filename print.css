@@ -1,0 +1,21 @@
+img {
+    display: none;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5px;
+    text-indent: 40px;
+}
+
+form {
+    display: none;
+}
+
+iframe {
+    display: none;
+}

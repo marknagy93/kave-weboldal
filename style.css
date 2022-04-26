@@ -1,0 +1,422 @@
+/* Body teljes magasság */
+html, body {
+    height: 100%;
+}
+
+/* Betűcsalád + Body háttere */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: url('img/pexels-afta-putta-gunawan-683039.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Navigációs sáv */
+#navbar1 {
+    background-color: rgb(26, 25, 25, 0.4);
+    border-radius: 5px;
+    animation-name: navbar;
+    animation-duration: 1s;
+}
+
+@keyframes navbar {
+    from {background-color: rgb(26, 25, 25, 0.0)}
+    to {background-color: rgb(26, 25, 25, 0.4)}
+}
+
+/* Navigációs sáv lenyíló beállításai */
+.navbar-toggler {
+    width: 47px;
+    height: 34px;
+    color: rgb(247, 244, 214);
+    border: 1px solid rgb(247, 244, 214);
+}
+
+
+.navbar-toggler .line {
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: rgb(247, 244, 214);
+    margin-bottom: 5px;
+}
+
+/* Navigációs sáv menüelemek */
+.nav-item a {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(247, 244, 214);
+    letter-spacing: 3px;
+    animation-name: nav-a;
+    animation-duration: 1s;
+}
+
+@keyframes nav-a {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.nav-item a:hover {
+    color: rgb(252, 239, 121);
+    text-decoration: underline solid rgb(252, 239, 121) 3px;
+    text-underline-offset: 6px;
+    
+}
+
+.nav-item a:focus {
+    color: rgb(252, 239, 121);
+    text-decoration: underline solid rgb(252, 239, 121) 3px;
+    text-underline-offset: 6px;
+}
+
+/* Főoldal közép elem felület */
+.landing-page-article {
+    margin-top: 15%;
+    opacity: 0;
+    animation-name: landing-page;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes landing-page {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.landing-page-article h1 {
+    font-weight: 800;
+    font-size: 100px;
+    color: rgb(253, 252, 241);
+    letter-spacing: 4px;
+}
+
+@media (max-width: 575px) {
+    .landing-page-article h1 {
+        font-size: 60px;
+    }
+}
+
+/* Button elemek */
+#btn-1, #btn-2 {
+    font-size: 20px;
+    background-color: rgb(252, 239, 121);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+#btn-1:hover {
+    background-color: rgb(253, 252, 241);
+}
+
+#btn-2:hover {
+    background-color: rgb(253, 252, 241);
+}
+
+#btn-3 {
+    color: rgb(26, 25, 25);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    background-color: rgb(252, 239, 121);
+}
+
+#btn-3:hover {
+    background-color: rgb(253, 252, 241);
+}
+
+/* Lábléc */
+#navbar2 {
+    background-color: rgb(26, 25, 25);
+    opacity: 0;
+    animation-name: navbar2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navbar2 {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.navbar-text {
+    color: rgb(253, 252, 241);
+    animation-name: navbar-text;
+    animation-duration: 2s;
+}
+
+@keyframes navbar-text {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+/* Itallap felület */
+.drink-menu {
+    background-color: rgb(19, 18, 18, 0.9);
+    animation-name: drink-menu;
+    animation-duration: 1s;
+}
+
+@keyframes drink-menu {
+    from {background-color: rgb(19, 18, 18, 0.0);}
+    to {background-color: rgb(19, 18, 18, 0.9);}
+}
+
+.drink-menu h1 {
+    text-transform: uppercase;
+    text-decoration: 1px solid underline rgb(253, 252, 241);
+    text-underline-offset: 5px;
+    color: rgb(253, 252, 241);
+    letter-spacing: 2.5px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    opacity: 0;
+    animation-name: drink-menu-h1;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drink-menu-h1 {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.table th, .table td {
+    color: rgb(253, 252, 241);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    opacity: 0;
+    animation-name: table-elements;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes table-elements {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.table {
+    margin-bottom: 100px;
+}
+
+/* Bemutatkozás felület */
+.introduction {
+    background-color: rgb(19, 18, 18, 0.9);
+    margin-top: 16px;
+    margin-bottom: 16px;
+    animation-name: introduction;
+    animation-duration: 1s;
+}
+
+@keyframes introduction {
+    from {background-color: rgb(19, 18, 18, 0.0)}
+    to {background-color: rgb(19, 18, 18, 0.9)}
+}
+
+.introduction h1 {
+    text-transform: uppercase;
+    text-decoration: 1px solid underline rgb(253, 252, 241);
+    text-underline-offset: 5px;
+    color: rgb(253, 252, 241);
+    letter-spacing: 2.5px;
+    opacity: 0;
+    animation-name: intro-h1;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes intro-h1 {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.introduction p {
+    color: rgb(253, 252, 241);
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+    opacity: 0;
+    animation-name: intro-p;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes intro-p {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.introduction img {
+    opacity: 0;
+    animation-name: intro-img;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes intro-img {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@media (min-width: 992px) {
+    .introduction img {
+        width: 400px;
+        height: 600px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .introduction img {
+        width: 400px;
+        height: 500px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .introduction img {
+        width: 450px;
+        height: 500px;
+    }
+}
+
+/* Kapcsolat felület */
+.contact {
+    background-color: rgb(19, 18, 18, 0.9);
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-bottom: 200px;
+    animation-name: contact;
+    animation-duration: 1s;
+}
+
+@keyframes contact {
+    from {background-color: rgb(19, 18, 18, 0.0)}
+    to {background-color: rgb(19, 18, 18, 0.9)}
+}
+
+#contact-cim {
+    text-transform: uppercase;
+    text-decoration: 1px solid underline rgb(253, 252, 241);
+    text-underline-offset: 5px;
+    color: rgb(253, 252, 241);
+    letter-spacing: 2.5px;
+    opacity: 0;
+    animation-name: contact-h1;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes contact-h1 {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.contact h2, .contact label {
+    color: rgb(253, 252, 241);
+    opacity: 0;
+    animation-name: label;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes label {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.contact input, .contact textarea, #btn-3 {
+    opacity: 0;
+    animation-name: input;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes input {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.form-control:focus {
+    border-color: rgb(247, 244, 214);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(247, 244, 214, 0.6);
+}
+
+.info p {
+    color: rgb(253, 252, 241);
+    letter-spacing: 2.5px;
+    opacity: 0;
+    animation-name: info-p;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes info-p {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+#info-cim {
+    text-transform: uppercase;
+    text-decoration: 1px solid underline rgb(253, 252, 241);
+    text-underline-offset: 5px;
+    color: rgb(253, 252, 241);
+    letter-spacing: 2.5px;
+    opacity: 0;
+    animation-name: info-cim;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes info-cim {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@media (min-width: 300px) and (max-width: 350px) {
+    #info-cim {
+        letter-spacing: 1.5px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 740px) {
+    .map iframe {
+        height: 300px;
+    }
+}
+
+@media (min-width: 741px) {
+    .map iframe {
+        height: 400px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+    .info p {
+        letter-spacing: 1.5px;
+    }
+}
+
+.map iframe {
+    opacity: 0;
+    animation-name: iframe;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes iframe {
+    from {opacity: 0}
+    to {opacity: 1}
+}
